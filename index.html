@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucas Irusta" />
+    <meta name="description" content="Portfolio de Lucas Irusta" />
+    <title>Portfolio Argentina Programa</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- Content <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Content -->
+    <div class="card mat-card" id="first-card">
+       <div id="profile-background"><img src="https://cdn.glitch.com/722b2445-051f-47ff-a2c7-8ba37df59aae%2Fmanifestacion.jpg?v=1588092010580"></div>
+        <div id="info" style="padding: 16px">
+            <div id="info-img">
+                <img class="profile-image" src="https://assets.codepen.io/210284/icon.png">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            </div>
+            <div id="info-data">
+                <div>
+                    <h1>Lucas Irusta</h1>
+                    <div id="info-company">Técnico Independiente</div>
+                    <div id="info-contact">
+                        <span>Córdoba (Argentina)</span>
+                        <span><a href="#">Información de Contacto</a></span>
+                    </div>
+                </div>
+                <ul id="info-details">
+                    <li><a href="#">
+                        <img src="https://cdn.glitch.com/58fe49e0-d68c-477b-84dc-5058870e55ab%2Fhuella-48x48.gif?1557241783368">
+                        <h2>Trabajo</h2>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="https://cdn.glitch.com/58fe49e0-d68c-477b-84dc-5058870e55ab%2Fhuella-48x48.gif?1557241783368">
+                        <h2>Casa</h2>
+                    </a></li>
+                </ul>
+            </div>
+            <div id="info-actions">
+                <button type="button" class="btn btn-primary">Tengo interés en</button>
+                <button type="button" class="btn btn-light">Agrerar Sección</button>
+                <button type="button" class="btn btn-light">Más...</button>
+            </div>
+        </div>   
+    </div>
+ <!-- 
+    <div class="card mat-card">
+        <div class="card-titles">
+            <h2>Acerca de...</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        </div>
+        <div>
+            Inefable.
+        </div>
+    </div>
+-->
+    <div class="card mat-card">
+        <div class="card-titles">
+            <h2>Acerca de...</h2>
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+                <a href="#" class="btn-right">
+                    <i class="fa fa-pen"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p id="text-acercade">Inefable</p>
+        </div>
+        <div>
+            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+        </div>
+    </div>
+    
+    <input type="file" id="file1" onchange="showFile(this)">
+
+    <div class="card mat-card">
+        <div class="experience">
+            <h2>Experiencia</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        </div>
+        <div>
+            <ul class="item-list">
+                <li>
+                    <h3>Técnico en Sistemas de Control</h3>
+                    <p>Control de Tiempo y Asistencia</p>
+                </li>
+                <li>
+                    <h3>Técnico Informático</h3>
+                    <p>Reparación de PCs y menesteres</p>
+                </li>
+                <li>
+                    <h3>Intento de Programador</h3>
+                    <p>Programitas chiquitos pero útiles</p>
+                </li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>Educación</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        </div>
+        <div>
+            <ul class="item-list">
+                <li>Argentina Programa</li>
+                <li>UTN</li>
+                <li>Institución Cervantes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mat-card"></div>
+
+    <div class="card mat-card">
+        <div class="proyects">
+            <h2>Proyectos</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        </div>
+        <div>
+            <ul class="item-list">
+                <li>
+                    <h3>Proyecto 01</h3>
+                    <p>Proyecto en desarrollo...</p>
+                </li>
+                <li>
+                    <h3>Proyecto Alfa</h3>
+                    <p>Proyecto en preparación...</p>
+                </li>
+                <li>
+                    <h3>Proyecto EVA</h3>
+                    <p>Proyecto en análisis...</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mat-card"></div>
+
+<script>
+    function cambiar_parrafo(){
+        document.getElementById("edit-acercade").style.display="block";
+        let texto=document.getElementById("text-acercade").innerText;
+        console.log(texto);
+    };
+    function myFunction2(valor){
+        document.getElementById("text-acercade").innerText=valor;
+    };
+
+    function logMessage(message){
+        console.log(message + "<br>")
+    }
+
+//controla si se presiono un enter
+let textarea=document.getElementById("edit-acercade") 
+textarea.addEventListener('keyup', (e) => {
+    logMessage(`Key "${e.key}" released [event: keyup]`);
+    if (e.key=="Enter"){ 
+        document.getElementById("edit-acercade").style.display="none";
+    }
+    });
+
+//carga el contenido de un archivo de tecto //y lo muestra en el parrafo
+function showFile(input) {
+    let file=input.files[0];
+    alert(`File name: ${file.name}`); // e.g my.png
+    alert(`Last modified: ${file.lastModified}`); // e.g 1552838408824
+    let reader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = function() { console.log(reader.result);
+    document.getElementById("text-acercade").innerText=reader.result;
+    };
+    reader.onerror= function() {
+        console.log(reader.error);
+    };
+}
+
+</script>
+
+  </body>
+</html>
